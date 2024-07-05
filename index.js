@@ -21,11 +21,13 @@
       var price4 = parseFloat(
         document.getElementById('price4').textContent.replace('Php', '').trim()
       )
+
       var product5 = document.getElementById('product5').textContent
       var qty5 = document.getElementById('qty5')
       var price5 = parseFloat(
         document.getElementById('price5').textContent.replace('Php', '').trim()
       )
+  
       var product6 = document.getElementById('product6').textContent
       var qty6 = document.getElementById('qty6')
       var price6 = parseFloat(
@@ -96,7 +98,6 @@
           carts.textContent += order
           totalPrice += parseFloat(qty4.value) * price4
         }
-        
         if (parseFloat(qty5.value) > 0) {
           var order =
             qty5.value.toString() +
@@ -110,7 +111,7 @@
           carts.textContent += order
           totalPrice += parseFloat(qty5.value) * price5
         }
-       
+            
         if (parseFloat(qty6.value) > 0) {
           var order =
             qty6.value.toString() +
@@ -124,6 +125,7 @@
           carts.textContent += order
           totalPrice += parseFloat(qty6.value) * price6
         }
+  
 
         total.value = 'Php ' + totalPrice.toFixed(2)
 
@@ -135,7 +137,7 @@
           } else {
             change.value = 'Php 0.00'
           }
-        }
+        })
       }
 
       qty1.addEventListener('keyup', addOrder)
