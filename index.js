@@ -135,12 +135,12 @@
           } else {
             change.value = 'Php 0.00'
           }
-        })
+        }
       }
 
       qty1.addEventListener('keyup', addOrder)
       qty2.addEventListener('keyup', addOrder)
       qty3.addEventListener('keyup', addOrder)
       qty4.addEventListener('keyup', addOrder)
-     qty.5addEventListener('keyup', addOrder)
-     qty.6addEventListener('keyu.   p', addOrder)
+      qty5.addEventListener('keyup', addOrder)
+      qty6.addEventListener('keyup', addOrder)
